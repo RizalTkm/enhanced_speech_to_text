@@ -1,11 +1,10 @@
 import 'package:google_fonts/google_fonts.dart'; // Add this for custom fonts
-import 'package:intl/intl.dart';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:flutter/services.dart';
+
 import 'package:provider/provider.dart';
 import 'provider.dart'; // your provider file, make sure to change it.....
-import 'package:shared_preferences/shared_preferences.dart';
 
 class PhoneCallScreen extends StatefulWidget {
   const PhoneCallScreen({
@@ -72,7 +71,7 @@ class _PhoneCallScreenState extends State<PhoneCallScreen> {
             ),
             const SizedBox(height: 10),
             Text(
-              widget.botName,
+              '',
               style: GoogleFonts.lato(
                 textStyle: TextStyle(color: Colors.black, fontSize: 20),
               ),
